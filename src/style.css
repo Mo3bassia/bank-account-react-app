@@ -1,0 +1,92 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(135deg, #2c2c2c, #1c1c1c); /* Dark background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  color: #ddd; /* Light text color */
+}
+
+.App {
+  width: 350px;
+  padding: 30px;
+  background: linear-gradient(
+    145deg,
+    #333,
+    #444
+  ); /* Dark background for the card */
+  border-radius: 20px;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.5); /* Darker shadow */
+  text-align: center;
+}
+
+.App h1 {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+  color: #fff; /* Light color for the heading */
+  font-weight: 600;
+}
+
+.App p {
+  margin: 15px 0;
+  color: #ccc; /* Light color for the paragraph */
+  font-size: 1.1rem;
+}
+
+.App p span {
+  font-weight: 600;
+  color: #d5cbf4; /* Soft purple for highlighted text */
+  background-color: #3f2a68; /* Darker background for span */
+  padding: 3px 8px;
+  border-radius: 8px;
+}
+
+.App button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px 18px;
+  font-family: "Poppins", sans-serif;
+  margin: auto;
+  font-size: 1rem;
+  color: #ffffff;
+  background-color: #6c63ff; /* Light purple */
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, box-shadow 0.2s ease;
+  gap: 10px;
+}
+
+.App button span {
+  font-weight: bold;
+  font-size: 0.9rem; /* تصغير حجم الخط */
+  padding: 2px 5px;
+}
+
+.App button:hover {
+  background-color: #5753d9; /* Darker purple on hover */
+  box-shadow: 0 5px 15px rgba(108, 99, 255, 0.3);
+}
+
+button:disabled {
+  background-color: #555; /* Disabled button color */
+  cursor: not-allowed;
+}
+
+@media (max-width: 400px) {
+  .App {
+    width: 90%;
+    padding: 20px;
+  }
+}
