@@ -35,7 +35,7 @@ export default function App() {
   return (
     <>
       <div className="App">
-        <h1>useReducer Bank Account</h1>
+        <h1>Bank Account</h1>
         <p>
           Balance:<span>{balance}</span>
         </p>
